@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <nav class='parent'>
+    <div class='child' style="float: left;">
+      <a class="v" style="padding:10px; float:left; overflow:hidden"
+        href="index.html">"VRUND"</a><!-- <img class="imgk" src="creative-picture_5120x2880_LOCK_SCREEN.jpg" width="200x" alt="log00>-->
+    </div>
+    <div class='child'>
+      <a class="k" style="padding:10px; overflow:hidden" href="academics.html">Academics</a>
+      <a class="k" style="padding:10px; overflow:hidden" href="soft_skills.html">Soft skills</a>
+      <a class="k" style="padding:10px; overflow:hidden" href="hobbies.html">Hobbies</a>
+      <a class="k" style="padding:10px; overflow:hidden" href="feedback.html">feedback</a>
+      <a class="k" style="padding:10px; overflow:hidden;float:right" href="photos.html">My photo gallery</a>
+    </div>
+
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </nav>
+</head>
+
+<body>
+  <p style="margin: 64px; color: rgb(15, 164, 114); font-size: 44px;">Let's solve the puzzle!</p>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <img id="drag1" src="image_part_001.jpg" draggable="true" ondragstart="drag(event)"
+    width="200" height="200">
+  <img id="drag2" src="image_part_002.jpg" draggable="true" ondragstart="drag(event)"
+    width="200" height="200">
+  <img id="drag3" src="image_part_003.jpg" draggable="true" ondragstart="drag(event)"
+    width="200" height="200">
+  <img id="drag4" src="image_part_004.jpg" draggable="true" ondragstart="drag(event)"
+    width="200" height="200">
+</body>
+<footer>
+  &#169 2023 VRUND.<br>
+  Created by vrund dobariya.<br>
+  <p style="text-align: center;">Find me on my networks!</p>
+  <span style="margin: 27%;">
+      <a href="https://www.facebook.com/profile.php?id=100086887600575" class="fa fa-facebook"></a>
+      <a href="https://github.com/VGD3626/" class="fa fa-github"></a>
+      <a href="https://mail.google.com/" class="fa fa-google"></a>
+      <a href="https://www.linkedin.com/in/vrund-dobariya-303555254/" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/vrund_410/" class="fa fa-instagram"></a>
+  </span>
+
+</footer>
+
+</html>

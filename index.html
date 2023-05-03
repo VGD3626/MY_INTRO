@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="C:\Users\Vrund\Downloads\v2.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        MY_INTRODUCTION
+    </title>
+    <nav class='parent'>
+        <div class='child' style="float: left;">
+            <a class="v" style="padding:10px; float:left; overflow:hidden" href="index.html">"VRUND"</a>
+        </div>
+        <div class='child'>
+            <a class="k" style="padding:10px; overflow:hidden" href="academics.html">Academics</a>
+            <a class="k" style="padding:10px; overflow:hidden" href="soft_skills.html">Soft skills</a>
+            <a class="k" style="padding:10px; overflow:hidden" href="hobbies.html">Hobbies</a>
+            <a class="k" style="padding:10px; overflow:hidden" href="feedback.html">Feedback</a>
+
+        </div>
+        <div class="c">
+            <a class="k" style="padding:8px;  overflow:hidden;float:right;" href="photos.html">My photo gallery</a>
+            <a class="label" href="photos.html">new</a>
+        </div>
+        <button onclick="myFunction()">Toggle dark mode</button>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </nav>
+</head>
+
+
+<body>
+    
+    <div class="pro"><img style="margin-left: 20px;" src="PASSPORT SIZE PHOTO.jpg" width="160px" id="pp"
+            title="it's me"><br>
+        <div class="ecsr">
+            <span>E</span>AT <span>C</span>ODE <span>S</span>LEEP <span>R</span>EPEAT.
+        </div>
+    </div>
+    <p style="padding-top: 14px; font-size: 17px; margin-left: 20px; margin-right: 400px; border-top: 4px solid black;">
+        I am pursuing my Bachelors in Computer Engineering at Dharmasinh Desai Universiy. I am a first<br>
+        year student. My fields of interest are Artificial Inteligance and Cyber security. I do
+        competitive <br>programming as well. I have a good command on C language and currently working on
+        C++. I am <br> also learning web development with the help of HTML and php. My only goal is to improve
+        myself<br>
+        as much as possible.
+    <div style="border-top: 2px solid black; margin-left: 20px;margin-bottom: 30px; width: 30%;">
+
+    </div>
+    </p>
+
+    <button onclick="getLocation()" class="but">Know your location</button>
+    <p id="demo" style="margin-left: 83%;"></p>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+    <br><br>
+    <form action="puzzle.html">
+        <button class="but">Jigsaw puzzle</button>
+    </form>
+    
+</body>
+<footer>
+    &#169 2023 VRUND.<br>
+    Created by vrund dobariya.<br>
+    <p style="text-align: center;">Find me on my networks!</p>
+    <span style="margin: 27%;">
+        <a href="https://www.facebook.com/profile.php?id=100086887600575" class="fa fa-facebook"></a>
+        <a href="https://github.com/VGD3626/" class="fa fa-github"></a>
+        <a href="https://mail.google.com/" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/vrund-dobariya-303555254/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/vrund_410/" class="fa fa-instagram"></a>
+    </span>
+
+</footer>
+
+</html>
